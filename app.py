@@ -1,18 +1,90 @@
-from flask import Flask
+#import dependencies
+import datetime as dt
+import numpy as np
+import pandas as pd
 
+#import more dependencies
+import sqlalchemy
+from sqlalchemy.ext.automap import automap_base
+from sqlalchemy.orm import Session
+from sqlalchemy import create_engine, func
+
+from flask import Flask, jsonify
+
+# The below code allows you to access the SQLite file
+engine = create_engine("sqlite:///hawaii.sqlite")
+
+# This line of code sets the stage for us to reflect our database later. 
+# automap_base() is a sqlalchemy function
+Base = automap_base()
+
+# This line of code lets us reflect the database. 
+Base.prepare(engine, reflect=True)
+
+# Lets find the keys
+Base.classes.keys()
+
+Measurement = Base.classes.measurement
+Station = Base.classes.station
+
+session = Session(engine)
+
+# Define our Flask app, this will create an app named 'app'
 app = Flask(__name__)
 
-# list_of_tuples = [
-#     (1,2),
-#     ('a', 'b'),
-#     (99, 'WaffleHaüs'),
-#     ('Australia', 25)
-# ]
+# Define the welcome route with the code below
+@app.route("/")
+def welcome():    
+    return(
+    '''
+    Welcome to the Climate Analysis API!
+    Available Routes:
+    /api/v1.0/precipitation
+    /api/v1.0/stations
+    /api/v1.0/tobs
+    /api/v1.0/temp/start/end
+    ''')
 
-@app.route('/')
-def hello_world():
-    return 'Hello world' * 10
-# def transformer(first, second):
-#     return (str(first) + str(second)) * 2
+@app.route("/api/v1.0/precipitation")
+def precipitation():
+    prev_year = dt.date(2017, 8, 23) - dt.timedelta(days=365)
+    precipitation = session.query(Measurement.date, Measurement.prcp).\
+      filter(Measurement.date >= prev_year).all()
+    precip = {date: prcp for date, prcp in precipitation}
+    return jsonify(precip)
 
-# print([transformer(g, h) for g, h in list_of_tuples])
+
+@app.route("/api/v1.0/stations")
+def stations():
+    results = session.query(Station.station).all()
+    stations = list(np.ravel(results))
+    return jsonify(stations=stations)
+
+
+@app.route("/api/v1.0/tobs")
+def temp_monthly():
+    prev_year = dt.date(2017, 8, 23) - dt.timedelta(days=365)
+    results = session.query(Measurement.tobs).\
+        filter(Measurement.station == 'USC00519281').\
+        filter(Measurement.date >= prev_year).all()
+    temps = list(np.ravel(results))
+    return jsonify(temps=temps)
+
+
+@app.route("/api/v1.0/temp/<start>")
+@app.route("/api/v1.0/temp/<start>/<end>")
+def stats(start=None, end=None):
+    sel = [func.min(Measurement.tobs), func.avg(Measurement.tobs), func.max(Measurement.tobs)]
+
+    if not end:
+        results = session.query(*sel).\
+            filter(Measurement.date >= start).\
+            filter(Measurement.date <= end).all()
+        temps = list(np.ravel(results))
+        return jsonify(temps)
+
+    results = session.query(*sel).\
+        filter(Measurement.date >= start).\
+        filter(Measurement.date <= end).all()
+    temps = list(np.ravel(results))
+    return jsonify(temps=temps)
