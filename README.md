@@ -17,7 +17,7 @@ All analysis and charts were created in jupyter notebook, using a combination of
 
 </br>
 
-<img src="https://github.com/carlosjennings1991/surfs_up/blob/main/surfer.png" width="1099" height="486">
+<img src="https://github.com/carlosjennings1991/surfs_up/blob/main/surfer2.png" width="1099" height="486">
 
 ___
 
