@@ -27,3 +27,9 @@ Pretty self explanatory, we want to know what's the temperature in Oahu Hawaii i
 
 <img src="https://github.com/carlosjennings1991/surfs_up/blob/main/june_temps.png" width="132" height="236">
 
+## Results Pt 2: Decemember Temperature
+
+Exactly the same as above, but for the month of December. 
+
+<img src="https://github.com/carlosjennings1991/surfs_up/blob/main/dec_temps.png" width="132" height="236">
+
