@@ -11,8 +11,12 @@ We also know that people buy ice cream when it's hot out. Hot out and *not raini
 * **Monthly Temperature for June**
 * **Monthly Temperature for December**
 
+All analysis and charts were created in jupyter notebook, using a combination of Python and SqLite. Source code found [here](https://github.com/carlosjennings1991/surfs_up/blob/main/SurfsUp_Challenge.ipynb)
+
 <img src="https://github.com/carlosjennings1991/surfs_up/blob/main/surfer.png" width="1099" height="540">
 
 ___
+
+## Results Pt 1: June Rainfall
 
 
