@@ -11,7 +11,7 @@ We also know that people buy ice cream when it's hot out. Hot out and *not raini
 * **Monthly Temperature for June**
 * **Monthly Temperature for December**
 
-<img src="https://github.com/carlosjennings1991/surfs_up/blob/main/surfer.png" width="1099" height="626">
+<img src="https://github.com/carlosjennings1991/surfs_up/blob/main/surfer.png" width="1099" height="540">
 
 ___
 
