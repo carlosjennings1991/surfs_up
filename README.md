@@ -8,3 +8,9 @@ We also know that people buy ice cream when it's hot out. Hot out and *not raini
 
 * **Monthly Rainfall in June (indicative of dry season)**
 * **Monthly Rainfall in December (rainy of rainy season)**
+* **Monthly Temperature for June
+* **Monthly Temperature for December
+
+___
+
+
