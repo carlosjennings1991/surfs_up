@@ -6,10 +6,10 @@ We also know that people buy ice cream when it's hot out. Hot out and *not raini
 
 </br>
 
-* **Monthly Rainfall in June (indicative of dry season)**
-* **Monthly Rainfall in December (rainy of rainy season)**
 * **Monthly Temperature for June**
 * **Monthly Temperature for December**
+* **Monthly Rainfall in June (indicative of dry season)**
+* **Monthly Rainfall in December (rainy of rainy season)**
 
 </br>
 
@@ -21,6 +21,9 @@ All analysis and charts were created in jupyter notebook, using a combination of
 
 ___
 
-## Results Pt 1: June Rainfall
+## Results Pt 1: June Temperature
 
+Pretty self explanatory, we want to know what's the temperature in Oahu Hawaii in June. To do this, we import a SQLite file that contains the weather data for five weather stations on the island. These five stations have recorded the temperature everyday from 2010 to 2017. We simply need to query the file, filter it so that we only look at June's data and produce the summary statistics of that month. The output looks like this: 
+
+<img src="https://github.com/carlosjennings1991/surfs_up/blob/main/june_temps.png">
 
