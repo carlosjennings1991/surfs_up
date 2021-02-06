@@ -33,3 +33,8 @@ Exactly the same as above, but for the month of December.
 
 <img src="https://github.com/carlosjennings1991/surfs_up/blob/main/dec_temps.png" width="132" height="236">
 
+## Results Pt 3: June Rainfall
+
+Here we see the precipitation info for June, keep in mind this is for the individual days of june. 
+
+<img src="https://github.com/carlosjennings1991/surfs_up/blob/main/june_rain.png" width="132" height="236">
