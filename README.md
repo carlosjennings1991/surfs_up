@@ -38,3 +38,9 @@ Exactly the same as above, but for the month of December.
 Here we see the precipitation info for June, keep in mind this is for the individual days of june. 
 
 <img src="https://github.com/carlosjennings1991/surfs_up/blob/main/june_rain.png" width="132" height="236">
+
+## Results Pt 4: December Rainfall
+
+Like the above for the December rainfall. Hawaii is on the northern edge of the tropics, so this would align with the rainy season, albeit less intensely than other place closer to the equator. 
+
+<img src="https://github.com/carlosjennings1991/surfs_up/blob/main/dec_rain.png" width="132" height="236">
