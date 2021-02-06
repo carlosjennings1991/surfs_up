@@ -4,5 +4,5 @@ For this analysis, we look at the climatic conditions for opening a surfing good
 
 We also know that people buy ice cream when it's hot out. Hot out and *not raining*. Conversely, ideal surfing conditions (i.e big waves) are positively correlated with wind speed and wind speed is positively correlated with rainfall. So in essense, we are looking for the goldilocks happy-medium which will be conducive for both sides of the business. To summarize in bullet points, we are looking for this info: 
 
-**Monthly Rainfall in June (indicative of dry season)
-**Monthly Rainfall in December (rainy of rainy season)
+* **Monthly Rainfall in June (indicative of dry season)
+* **Monthly Rainfall in December (rainy of rainy season)
