@@ -59,3 +59,7 @@ After analyzing the data, we come across a few key takeaways:
 Of course, small changes from winter to summer temperatures are a feature of tropical climates, what's notable about Hawaii is it's moderate summer temperatures. There are summer climates in the Northeast with hotter summers than Oahu Hawaii. This can partly be explained by the moderating effects of the ocean and it's cooling breezes, but it's still quite shocking to see the hard data. 
 
 As for how this portends to the business - it's pretty good. While winter is cooler, it's a barely perceptible cooling, and not too cold to preclude anyone from buying ice cream. 
+
+Analyzing the rainfall data is a bit more complex. For example, the box-plots below showcase the June & December rainfalls. 
+
+<img src="https://github.com/carlosjennings1991/surfs_up/blob/main/compound_rainfall_boxplot.png" width="417" height="236">
