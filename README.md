@@ -54,4 +54,4 @@ After analyzing the data, we come across a few key takeaways:
 * **Summer is oddly cool**
 * **Winter is oddly warm**
 
-<img src="https://github.com/carlosjennings1991/surfs_up/blob/main/double_box_plot.png">
+<img src="https://github.com/carlosjennings1991/surfs_up/blob/main/double_box_plot.png" width="417" height="296">
