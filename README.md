@@ -65,3 +65,7 @@ Analyzing the rainfall data is a bit more complex. For example, the box-plots be
 <img src="https://github.com/carlosjennings1991/surfs_up/blob/main/compound_rainfall_boxplot.png" width="417" height="296">
 
 Upon immediate inspection we can see that there are much more outliers in both months, which limits the readability of the chart. Secondly, despite the outliers with extremely high rain totals, the mean is close to zero. This means the typical day receives no precipitation. 
+
+Now what would be really informative is if there was data on when the rain fell on days that had rainfall. Hawaii's rain tends to come in torrential downpours (hence all the outliers). It's essentially the opposite of UK/Ireland where most days are overcast and have a little drizzle. 
+
+If we can prove that even days that have rain also have sunshine, we would diminish one potentially negative aspect of the location. 
