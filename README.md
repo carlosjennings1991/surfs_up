@@ -62,4 +62,4 @@ As for how this portends to the business - it's pretty good. While winter is coo
 
 Analyzing the rainfall data is a bit more complex. For example, the box-plots below showcase the June & December rainfalls. 
 
-<img src="https://github.com/carlosjennings1991/surfs_up/blob/main/compound_rainfall_boxplot.png" width="417" height="236">
+<img src="https://github.com/carlosjennings1991/surfs_up/blob/main/compound_rainfall_boxplot.png" width="417" height="296">
